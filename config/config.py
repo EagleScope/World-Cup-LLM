@@ -53,6 +53,10 @@ ELICITATION_SCALE = (0, 100)        # integer 0-100, renormalized to sum 100 in 
 REASONING_LEVELS: Tuple[str, ...] = ("low", "high")
 # Gemini is high-only (always-on thinking, cannot disable) — see MODELS below.
 
+# §18.3 retries on parse failure. The protocol mandates retry but fixes no count;
+# this is an implementation default (not a locked protocol value).
+PARSE_MAX_ATTEMPTS = 3
+
 # =============================================================================
 # 4. Market-conditioning arms  (§7) — FROZEN
 # =============================================================================
