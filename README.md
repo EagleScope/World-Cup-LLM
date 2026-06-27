@@ -51,7 +51,16 @@ pytest -q
 ```
 
 ## Status
-- [x] Module 1 — config (locked constants, verified models, §20 prompts)
-- [ ] Module — frozen scoring script (§14)
-- [ ] Module 1 (build order) — data freeze (§11)
-- [ ] Model clients · run/aggregate · pilot (next session)
+- [x] Config — locked constants, verified models, §20 prompts (`config/config.py`)
+- [x] **Frozen scoring script (§14)** — `src/scoring_frozen.py` (lock-critical; runs on synthetic data)
+- [x] De-vig / parsing / aggregation — `src/markets/devig.py`, `src/parsing.py`, `src/aggregate.py`
+- [x] Data freeze (§11/§12) + storage schemas (§21) — `src/data_freeze.py`, `src/records.py`
+- [x] Polymarket Gamma client (§13) — `src/markets/polymarket.py` (champion/outright verified live)
+- [x] Model clients (§18.2) — `src/clients/` (code complete; live smoke-test pending approval)
+- [x] Run/aggregate (§18.3) + Pilot gate (§19) — `src/run_aggregate.py`, `src/pilot.py`
+- [ ] **PI sign-offs before lock** — reasoning low/high mappings (Claude budget, Grok param,
+      Gemini thinking), native-API prices; pilot live run on finished group-stage matches
+- [ ] Data-source adapters — Elo / FIFA / Transfermarkt / results DB scrapers (sources TBD)
+- [ ] Pinnacle closing-line source (§13) — odds aggregator + key TBD
+
+`73 tests passing.` No live API calls are made anywhere in the test suite.

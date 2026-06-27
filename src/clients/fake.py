@@ -30,3 +30,25 @@ class FakeClient(ModelClient):
                         **self.spec.reasoning_kwargs.get(reasoning_level, {})},
             usage=TokenUsage(input_tokens=100, output_tokens=12, total_tokens=112),
         )
+
+
+class ConstantFakeClient(ModelClient):
+    """Returns a deterministic response per sample_index (for run/pilot tests).
+
+    `response_for(sample_index, level, arm)` -> str. Lets tests inject varied but
+    reproducible samples without any network."""
+    def __init__(self, spec: ModelSpec, response_for):
+        super().__init__(spec, api_key="fake")
+        self._fn = response_for
+        self._i = 0
+
+    def _raw_complete(self, prompt, reasoning_level, temperature) -> RawCompletion:
+        text = self._fn(self._i, reasoning_level, temperature)
+        self._i += 1
+        return RawCompletion(
+            text=text,
+            api_version="fake/1.0",
+            parameters={"reasoning_level": reasoning_level, "temperature": temperature,
+                        **self.spec.reasoning_kwargs.get(reasoning_level, {})},
+            usage=TokenUsage(input_tokens=100, output_tokens=12, total_tokens=112),
+        )
