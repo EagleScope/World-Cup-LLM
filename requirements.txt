@@ -1,0 +1,15 @@
+# Core scientific stack — pinned loosely; freeze exact versions before lock.
+numpy>=1.24,<2.3
+scipy>=1.10
+pandas>=2.0
+matplotlib>=3.7          # reliability diagrams
+python-dotenv>=1.0       # load .env
+
+# Provider SDKs (used by the model-clients module, next session)
+anthropic>=0.40
+openai>=1.40
+google-genai>=0.3        # Google Gen AI SDK (Gemini)
+# xAI Grok is OpenAI-compatible; reuse the openai SDK with base_url=https://api.x.ai/v1
+
+# Testing
+pytest>=7.4

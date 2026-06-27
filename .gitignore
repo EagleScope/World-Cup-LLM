@@ -1,0 +1,31 @@
+# ---- Secrets: NEVER commit ----
+.env
+.env.*
+!.env.example
+*.key
+credentials
+aws_credentials
+
+# ---- Collected data (frozen packs, forecasts, market snapshots) ----
+# Packs/forecasts are timestamped artifacts; keep them out of git unless
+# explicitly committed for the registered forecast timestamps.
+data/forecasts/*
+data/markets/*
+!data/**/.gitkeep
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# ---- OS / editor ----
+.DS_Store
+*.swp
+.idea/
+.vscode/
