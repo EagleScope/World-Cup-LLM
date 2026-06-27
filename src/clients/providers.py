@@ -50,6 +50,10 @@ class AnthropicClient(ModelClient):
 class _OpenAICompatibleClient(ModelClient):
     """Shared impl for OpenAI and xAI (OpenAI-compatible chat completions)."""
     base_url: Optional[str] = None
+    # OpenAI's completion_tokens INCLUDES reasoning_tokens; xAI's does NOT.
+    # Normalize so output_tokens is always the VISIBLE portion and reasoning_tokens
+    # is always separate, so cost = input + output + reasoning never double-counts.
+    completion_includes_reasoning: bool = True
 
     def _raw_complete(self, prompt, reasoning_level, temperature) -> RawCompletion:
         import openai  # lazy
@@ -66,7 +70,10 @@ class _OpenAICompatibleClient(ModelClient):
         details = getattr(u, "completion_tokens_details", None)
         if details is not None:
             reasoning = getattr(details, "reasoning_tokens", 0) or 0
-        usage = TokenUsage(input_tokens=u.prompt_tokens, output_tokens=u.completion_tokens,
+        visible = u.completion_tokens
+        if self.completion_includes_reasoning:
+            visible = max(u.completion_tokens - reasoning, 0)
+        usage = TokenUsage(input_tokens=u.prompt_tokens, output_tokens=visible,
                            reasoning_tokens=reasoning, total_tokens=u.total_tokens)
         return RawCompletion(text=text, api_version=f"openai-sdk/{openai.__version__}",
                              parameters={k: v for k, v in params.items() if k != "messages"},
@@ -74,13 +81,16 @@ class _OpenAICompatibleClient(ModelClient):
 
 
 class OpenAIClient(_OpenAICompatibleClient):
-    """GPT-5.5 via the OpenAI API."""
+    """GPT-5.5 via the OpenAI API. completion_tokens includes reasoning_tokens."""
     base_url = None
+    completion_includes_reasoning = True
 
 
 class XAIClient(_OpenAICompatibleClient):
-    """Grok 4.3 via the xAI OpenAI-compatible endpoint."""
+    """Grok 4.3 via the xAI OpenAI-compatible endpoint.
+    completion_tokens EXCLUDES reasoning_tokens (kept separate)."""
     base_url = XAI_BASE_URL
+    completion_includes_reasoning = False
 
 
 class GeminiClient(ModelClient):
