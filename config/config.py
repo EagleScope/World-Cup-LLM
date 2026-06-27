@@ -129,16 +129,14 @@ MODELS: List[ModelSpec] = [
         model_id="claude-opus-4-8",                 # VERIFIED via GET /v1/models
         api="anthropic_messages",
         in_paired_contrast=True,
-        accepts_temperature=True,
+        accepts_temperature=False,                  # VERIFIED: temperature deprecated for Opus 4.8
         reasoning_kwargs={
-            # Claude has NO low/high enum — reasoning is `thinking.budget_tokens`.
-            # PENDING_SIGNOFF: define the two budgets that operationalize low vs high.
-            # Proposed: low = thinking disabled (minimal reasoning),
-            #           high = extended thinking with a large budget.
-            "low": {"thinking": {"type": "disabled"}},                       # PENDING_SIGNOFF
-            "high": {"thinking": {"type": "enabled", "budget_tokens": 16000}},  # PENDING_SIGNOFF
+            # VERIFIED live 2026-06-27: Opus 4.8 uses adaptive thinking +
+            # output_config.effort (low/medium/high). Maps directly to §6 low/high.
+            "low": {"thinking": {"type": "adaptive"}, "output_config": {"effort": "low"}},
+            "high": {"thinking": {"type": "adaptive"}, "output_config": {"effort": "high"}},
         },
-        notes="Anthropic key valid at build. budget_tokens mapping needs PI sign-off (§6).",
+        notes="effort low/high verified live; temperature deprecated for this model (not sent).",
     ),
     # ---- Slot 2: GPT-5.5 (OpenAI native) ----------------------------------
     ModelSpec(
@@ -163,14 +161,14 @@ MODELS: List[ModelSpec] = [
         model_id="grok-4.3",                        # VERIFIED via GET /v1/models
         api="xai_openai_compatible",
         in_paired_contrast=True,
-        accepts_temperature=True,                   # PENDING_SIGNOFF: confirm at client build
+        accepts_temperature=True,                   # VERIFIED: grok-4.3 accepts temperature 0.7
         reasoning_kwargs={
-            # PENDING_SIGNOFF: confirm grok-4.3 exposes reasoning_effort low/high
-            # (grok-3-mini did; grok-4 was always-reasoning). Verify at client build.
-            "low": {"reasoning_effort": "low"},     # PENDING_SIGNOFF
-            "high": {"reasoning_effort": "high"},   # PENDING_SIGNOFF
+            # VERIFIED live 2026-06-27: grok-4.3 accepts reasoning_effort low/high
+            # (reasoning tokens scaled 661 -> 3339 low->high).
+            "low": {"reasoning_effort": "low"},
+            "high": {"reasoning_effort": "high"},
         },
-        notes="reasoning_effort support on grok-4.3 must be confirmed before lock.",
+        notes="reasoning_effort low/high + temperature verified live.",
     ),
     # ---- Slot 4: Gemini 3.1 Pro (Google AI native) — HIGH ONLY ------------
     ModelSpec(
@@ -182,9 +180,9 @@ MODELS: List[ModelSpec] = [
         in_paired_contrast=False,                   # §6: excluded from paired low-vs-high
         accepts_temperature=True,
         reasoning_kwargs={
-            # Always-on thinking, cannot disable -> contributes the HIGH cell only.
-            # PENDING_SIGNOFF: confirm exact thinking-level param at client build.
-            "high": {},                             # PENDING_SIGNOFF (default thinking on)
+            # VERIFIED live 2026-06-27: default config -> always-on thinking
+            # (reasoning tokens ~1298). Contributes the HIGH cell only (§6).
+            "high": {},
         },
         notes="Preview alias, not a dated snapshot; log API version + timestamp every call (§5).",
     ),

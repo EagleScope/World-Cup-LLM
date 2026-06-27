@@ -83,8 +83,10 @@ def test_factory_maps_every_provider():
     assert client_class_for("google") is GeminiClient
 
 
-def test_cost_is_none_while_prices_pending():
+def test_cost_computed_from_estimate_prices():
     fc = FakeClient(CLAUDE, [GOOD])
     rec = fc.forecast(PACK, "high", "primary", "M1")
-    assert rec.usage.usd_cost is None                  # PENDING prices
-    assert pricing.PRICES["Claude Opus 4.8"] is None
+    # Prices are populated as ESTIMATES (Bedrock catalog / placeholders) pending
+    # PI confirmation; cost is therefore computed and flagged as estimate.
+    assert rec.usage.usd_cost is not None and rec.usage.usd_cost > 0
+    assert pricing.PRICES_ARE_ESTIMATES is True

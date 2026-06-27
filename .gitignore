@@ -32,3 +32,6 @@ env/
 
 # Demo/scoring artifacts
 data/*.png
+
+# throwaway scripts (not part of the study)
+scripts/

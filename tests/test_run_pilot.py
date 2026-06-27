@@ -86,7 +86,7 @@ def test_pilot_passes_with_clean_stable_forecasts():
     assert res.brier_stability <= C.PILOT_BRIER_STABILITY
     assert res.brier_gate_pass is True
     assert res.passed is True
-    assert res.usd_per_match is None          # prices PENDING -> cost not asserted
+    assert res.usd_per_match is not None and res.usd_per_match > 0   # estimate prices set
     assert res.tokens_per_match > 0
 
 

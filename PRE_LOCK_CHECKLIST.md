@@ -10,23 +10,20 @@ can be timestamped now. These gate the *live data collection*, not the lock.
 - [ ] **Rotate all keys** pasted in chat (4 LLM + 3 AWS). They are gitignored and
       never committed, but exposure-in-chat warrants rotation before the repo is public.
 
-## B. Reasoning low/high mappings (§6) — confirm before the live run
-Code location: `config/config.py` → `MODELS[*].reasoning_kwargs`.
-- [ ] **Claude Opus 4.8** — no low/high enum. Current default: `low` = thinking
-      disabled, `high` = extended thinking `budget_tokens=16000`. Confirm the two
-      budgets. (Note: thinking-on forces `temperature=1`, so the high cell cannot
-      use temp 0.7 — diversity from stochastic reasoning, documented per §10.)
-- [ ] **Grok 4.3** — confirm `reasoning_effort` low/high is exposed by `grok-4.3`
-      (grok-3-mini had it; grok-4 was always-reasoning). Verify in the pilot smoke-test.
-- [ ] **Gemini 3.1 Pro** — confirm the exact thinking-level parameter for the
-      high-only cell (always-on thinking).
-- [ ] **Grok temperature** — confirm `grok-4.3` accepts `temperature=0.7`.
+## B. Reasoning low/high mappings (§6) — RESOLVED (verified live 2026-06-27)
+All confirmed via smoke test against the live APIs; `config/config.py` updated:
+- [x] **Claude Opus 4.8** — `thinking.type=adaptive` + `output_config.effort`
+      (low/high). temperature is DEPRECATED for this model and is not sent.
+- [x] **GPT-5.5** — `reasoning_effort` low/high (reasoning tokens 177 -> 1024).
+- [x] **Grok 4.3** — `reasoning_effort` low/high (reasoning tokens 660 -> 2428);
+      accepts temperature 0.7.
+- [x] **Gemini 3.1 Pro** — default config = always-on thinking (high cell only).
 
-## C. Native-API prices (§18 cost logging)
-Code location: `src/clients/pricing.py` → `PRICES`.
-- [ ] Confirm current per-1M input/output (and reasoning) prices for Anthropic,
-      OpenAI, xAI, Google. Tokens are logged now; USD shows PENDING until set.
-      The pilot reports the true per-match figure once prices are in.
+## C. Native-API prices (§18 cost logging) — ESTIMATES IN, confirm before final cost
+Code location: `src/clients/pricing.py` → `PRICES` (`PRICES_ARE_ESTIMATES=True`).
+- [ ] Confirm native per-1M prices. Currently ESTIMATES: Claude $5/$25 and GPT
+      $5.5/$33 (Bedrock catalog), Grok $3/$15 and Gemini $2/$12 (placeholders).
+      Tokens are logged exactly; only the USD multiplier needs confirming.
 
 ## D. Statistical-baseline parameterization (§13) — confirm before lock
 Code location: `src/baselines.py`. Math is fixed; these inputs are open:

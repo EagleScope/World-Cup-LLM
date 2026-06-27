@@ -16,11 +16,16 @@ from src.records import TokenUsage
 
 # model_name -> {"input": $/Mtok, "output": $/Mtok}. None == PENDING (not yet set).
 # Reasoning/thinking tokens are billed at the provider's output rate unless noted.
+#
+# ESTIMATES (not yet PI-confirmed): Claude/GPT use the Bedrock model-catalog prices
+# seen at build; Grok/Gemini are rough placeholders. Confirm native list prices
+# before reporting final cost. PRICES_ARE_ESTIMATES flags this in any output.
+PRICES_ARE_ESTIMATES = True
 PRICES: Dict[str, Optional[Dict[str, float]]] = {
-    "Claude Opus 4.8": None,   # PENDING_SIGNOFF: native Anthropic price per 1M
-    "GPT-5.5": None,           # PENDING_SIGNOFF: native OpenAI price per 1M
-    "Grok 4.3": None,          # PENDING_SIGNOFF: native xAI price per 1M
-    "Gemini 3.1 Pro": None,    # PENDING_SIGNOFF: native Google price per 1M
+    "Claude Opus 4.8": {"input": 5.0, "output": 25.0},   # ESTIMATE (Bedrock catalog)
+    "GPT-5.5": {"input": 5.5, "output": 33.0},            # ESTIMATE (Bedrock catalog)
+    "Grok 4.3": {"input": 3.0, "output": 15.0},           # ESTIMATE (placeholder)
+    "Gemini 3.1 Pro": {"input": 2.0, "output": 12.0},     # ESTIMATE (placeholder)
 }
 
 

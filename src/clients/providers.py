@@ -29,15 +29,14 @@ class AnthropicClient(ModelClient):
     def _raw_complete(self, prompt, reasoning_level, temperature) -> RawCompletion:
         import anthropic  # lazy
         client = anthropic.Anthropic(api_key=self.api_key)
-        rk = dict(self.spec.reasoning_kwargs[reasoning_level])  # {'thinking': {...}}
-        thinking = rk.get("thinking", {"type": "disabled"})
-        budget = thinking.get("budget_tokens", 0) if thinking.get("type") == "enabled" else 0
-        max_tokens = _BASE_OUTPUT_TOKENS + budget
+        # Opus 4.8: adaptive thinking + output_config.effort (low/high). VERIFIED.
+        rk = dict(self.spec.reasoning_kwargs[reasoning_level])  # thinking + output_config
+        # Generous cap so adaptive high-effort thinking + the 5-line answer always fit;
+        # billing is on tokens actually used, not the cap.
+        max_tokens = 16000
         params = {"model": self.spec.model_id, "max_tokens": max_tokens,
                   "messages": [{"role": "user", "content": prompt}], **rk}
-        # Extended thinking requires temperature == 1; only set temp when thinking off.
-        if temperature is not None and thinking.get("type") != "enabled":
-            params["temperature"] = temperature
+        # temperature is deprecated for this model and is never sent (accepts_temperature=False).
         resp = client.messages.create(**params)
         text = "".join(b.text for b in resp.content if getattr(b, "type", "") == "text")
         u = resp.usage
