@@ -1,0 +1,35 @@
+{
+  "match_id": "R32_73_ZAF_CAN",
+  "team_A": "South Africa",
+  "team_B": "Canada",
+  "capture_timestamp": "2026-06-28T16:51:49.473843+00:00",
+  "kickoff_timestamp": "2026-06-28T19:00:00+00:00",
+  "devig_method": "proportional",
+  "pinnacle": {
+    "captured": true,
+    "path": "data/markets/R32_73_ZAF_CAN.pinnacle.raw.json",
+    "sha256": "37705229b8cfe79dd6482c7ea672285599834f6ade82893e208ab6f2bf04b44f",
+    "bytes": 7263,
+    "captured_at": "2026-06-28T16:51:49.473843+00:00",
+    "raw_odds": {
+      "home": 5.85,
+      "draw": 3.65,
+      "away": 1.73
+    },
+    "devigged_AB": {
+      "A_WIN": 0.16710552431359577,
+      "DRAW": 0.267826662256037,
+      "B_WIN": 0.5650678134303673
+    }
+  },
+  "polymarket": {
+    "captured": true,
+    "raw_search": {
+      "path": "data/markets/R32_73_ZAF_CAN.polymarket.search.raw.json",
+      "sha256": "62b2efc8dee6b195ddc025778508d3a22c8bcb0aa97f6c79cbbd2479ed026048",
+      "bytes": 3417419,
+      "captured_at": "2026-06-28T16:51:49.473843+00:00"
+    },
+    "note": "raw search archived; per-match parser not built — extract advancement/winner line later. No value fabricated."
+  }
+}
