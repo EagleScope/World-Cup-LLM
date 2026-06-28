@@ -16,6 +16,8 @@ data/forecasts/pilot*
 data/markets/pilot*
 # Pilot evidence kept OUT of the tagged tree (also retained in git history).
 data/pilot/_local/
+# Live forecasts collected locally (raw+parsed), gitignored per PI directive (post-tag).
+data/forecasts/_local/
 !data/**/.gitkeep
 
 # ---- Python ----
