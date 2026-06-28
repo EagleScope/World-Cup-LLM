@@ -30,6 +30,131 @@
       "bytes": 3417419,
       "captured_at": "2026-06-28T16:51:49.473843+00:00"
     },
-    "note": "raw search archived; per-match parser not built — extract advancement/winner line later. No value fabricated."
+    "benchmark": {
+      "team_A": "South Africa",
+      "team_B": "Canada",
+      "three_way": {
+        "captured": true,
+        "event_slug": "fifwc-rsa-can-2026-06-28",
+        "raw_yes": {
+          "A_win": 0.165,
+          "draw": 0.275,
+          "B_win": 0.555
+        },
+        "booksum": 0.995,
+        "overround_pct": -0.5,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "A_WIN": 0.1658291457286432,
+            "DRAW": 0.27638190954773867,
+            "B_WIN": 0.5577889447236181
+          },
+          "odds_ratio": {
+            "A_WIN": 0.1661813728398132,
+            "DRAW": 0.2767079605061958,
+            "B_WIN": 0.557110666653991
+          },
+          "shin": {
+            "A_WIN": 0.1658291457286432,
+            "DRAW": 0.27638190954773867,
+            "B_WIN": 0.5577889447236181
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Canada win on 2026-06-28?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.555\", \"0.445\"]",
+            "lastTradePrice": 0.56,
+            "bestBid": 0.55,
+            "bestAsk": 0.56,
+            "clobTokenIds": "[\"89061390591705493428902121311311284252745020608578311635752281866413002720744\", \"90199087582184571392006824212249181438206390069335104256737438436719810132611\"]",
+            "volume": "12930397.409527808",
+            "liquidity": "5843121.3876"
+          },
+          {
+            "question": "Will South Africa win on 2026-06-28?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.165\", \"0.835\"]",
+            "lastTradePrice": 0.17,
+            "bestBid": 0.16,
+            "bestAsk": 0.17,
+            "clobTokenIds": "[\"40789634509720753537744583215158810500689355512680317697704779871684105258170\", \"56933877933273336140220907191289159230689336479624150836877723244992856440718\"]",
+            "volume": "1338649.6059290052",
+            "liquidity": "1708375.4858"
+          },
+          {
+            "question": "Will South Africa vs. Canada end in a draw?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.275\", \"0.725\"]",
+            "lastTradePrice": 0.28,
+            "bestBid": 0.27,
+            "bestAsk": 0.28,
+            "clobTokenIds": "[\"88168782492845289495931894123636898423732610611621478464750983403983457679764\", \"93061090028342024181853733154322477305889399353290162610682565878775205726882\"]",
+            "volume": "1549178.2239249996",
+            "liquidity": "2632886.7064"
+          }
+        ]
+      },
+      "advancement": {
+        "captured": true,
+        "event_slug": "world-cup-nation-to-reach-round-of-16",
+        "next_round": "Round of 16",
+        "raw_yes": {
+          "A": 0.247,
+          "B": 0.755
+        },
+        "booksum": 1.002,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "ADV_A": 0.2465069860279441,
+            "ADV_B": 0.7534930139720559
+          },
+          "odds_ratio": {
+            "ADV_A": 0.24599863059969743,
+            "ADV_B": 0.7540013694003026
+          },
+          "shin": {
+            "ADV_A": 0.2460000000000312,
+            "ADV_B": 0.7539999999999688
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will South Africa reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.247\", \"0.753\"]",
+            "lastTradePrice": 0.251,
+            "bestBid": 0.245,
+            "bestAsk": 0.249,
+            "clobTokenIds": "[\"105517018462666829443894895436566740888623076054193185859939650072261259921397\", \"76872647250250218159118164298258242442179612037987991833718680776174330035326\"]",
+            "volume": "60059.57095099999",
+            "liquidity": "28307.67263"
+          },
+          {
+            "question": "Will Canada reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.755\", \"0.245\"]",
+            "lastTradePrice": 0.76,
+            "bestBid": 0.75,
+            "bestAsk": 0.76,
+            "clobTokenIds": "[\"2108893452181246366066016884568753257688631497791228255553956849046896519512\", \"54396510487845279427210685386605312861837766705557776925144398162417785788930\"]",
+            "volume": "55063.55167999995",
+            "liquidity": "27189.9242"
+          }
+        ]
+      }
+    },
+    "benchmark_provenance": {
+      "parsed_from": "archive (no re-fetch)",
+      "archive_file": "data/markets/R32_73_ZAF_CAN.polymarket.search.raw.json",
+      "archive_sha256": "62b2efc8dee6b195ddc025778508d3a22c8bcb0aa97f6c79cbbd2479ed026048",
+      "capture_timestamp": "2026-06-28T16:51:49.473843+00:00",
+      "kickoff_timestamp": "2026-06-28T19:00:00+00:00",
+      "leakage_free": true,
+      "note": "Polymarket per-match 3-way + advancement parsed offline from the pre-kickoff raw search archived at the matched capture timestamp; no value re-fetched or fabricated. Registered under AMENDMENT_001 (per-match 3-way added as benchmark)."
+    }
   }
 }
