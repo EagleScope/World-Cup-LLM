@@ -1,0 +1,67 @@
+{
+  "match_id": "R32_73_ZAF_CAN",
+  "captured_at": "2026-06-28T16:51:49.473843+00:00",
+  "kickoff": "2026-06-28T19:00:00+00:00",
+  "fields": {
+    "elo": {
+      "A": 1575,
+      "B": 1748,
+      "diff": -173,
+      "source": "eloratings.net (live pre-kickoff snapshot)",
+      "provenance": {
+        "source": "eloratings.net",
+        "capture_timestamp": "2026-06-28T16:51:49.473843+00:00",
+        "source_urls": {
+          "World.tsv": "https://www.eloratings.net/World.tsv",
+          "en.teams.tsv": "https://www.eloratings.net/en.teams.tsv"
+        },
+        "snapshot_dir": "data/packs/R32_73_ZAF_CAN.elo",
+        "world_tsv_sha256": "39bb14cd8655e3cff8841c6f34fa1384ec40654c20f849f799ce63cf7c6e4375",
+        "teams_tsv_sha256": "ff4b8c9c7bcdad56e81a007726c1a655c6dabdf77bca151b1d619f24125dbc90"
+      }
+    },
+    "fifa_rank": {
+      "A": 54,
+      "B": 32,
+      "type": "live in-tournament (pre-kickoff)",
+      "source_url": "https://inside.fifa.com/fifa-world-ranking/men",
+      "note": "verified on FIFA's own page; SA 54 / Canada 32 (third-party reports differed)"
+    },
+    "squad_value_eur_m": {
+      "A": 49.25,
+      "B": 198.65,
+      "source_url_A": "https://www.transfermarkt.com/sudafrika/startseite/verein/3806",
+      "source_url_B": "https://www.transfermarkt.com/kanada/startseite/verein/3510"
+    },
+    "form_last10_wdl": {
+      "A": "2-4-4",
+      "B": "4-5-1",
+      "source": "manually verified by author via Google search, 2026-06-28",
+      "note": "author-verified; supersedes the FBref scrape (3-5-2 / 3-6-1), which was incorrect"
+    },
+    "goals_for_against_last10": {
+      "A": "9/12",
+      "B": "16/6",
+      "source": "manually verified by author via Google search, 2026-06-28",
+      "note": "author-verified; supersedes the FBref scrape (11/7 / 15/6), which was incorrect"
+    },
+    "rest_days": {
+      "A": 4,
+      "B": 4,
+      "basis": "both last played 2026-06-24; R32 2026-06-28",
+      "source_url": "FBref match logs (above)"
+    },
+    "host_flag": {
+      "A": "no",
+      "B": "yes",
+      "basis": "Canada is a 2026 co-host (USA/Canada/Mexico)"
+    },
+    "venue": {
+      "venue": "SoFi Stadium",
+      "city": "Inglewood",
+      "source_url": "https://sports.yahoo.com/soccer/article/2026-fifa-world-cup-daily-schedule-every-match-date-kickoff-time-and-venue-for-all-48-teams-234515087.html"
+    }
+  },
+  "market_benchmark_manifest": "data/markets/R32_73_ZAF_CAN.market.manifest.json",
+  "last_updated": "2026-06-28 (form/goals corrected to author-verified values)"
+}

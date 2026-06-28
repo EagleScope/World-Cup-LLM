@@ -13,7 +13,9 @@ Design rules (PI directive, item 5):
     non-negotiable, parsing/de-vig can be finished later.
   - NEVER fabricate, estimate, or substitute a market number. A missing line is
     recorded honestly ("captured": false) — never filled with a guess.
-  - Stored under a gitignored path (NOT in the tagged commit).
+  - Stored under a TRACKED path (data/markets/), committed in a per-round commit
+    AFTER the pre-registration tag (§17 public timestamps). It is NOT in the tagged
+    commit (the tag is created before any market/forecast commit).
 
 This module separates the PURE archive/manifest logic (offline-tested) from the
 thin network fetchers (run only at the kickoff-3h window).

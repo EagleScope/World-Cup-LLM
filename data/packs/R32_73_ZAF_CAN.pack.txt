@@ -1,0 +1,13 @@
+MATCH: Round of 32, 2026-06-28, SoFi Stadium, Inglewood
+TEAM A: South Africa
+TEAM B: Canada
+
+                              TEAM A        TEAM B
+World Football Elo:           1575        1748
+Elo difference (A - B):       -173
+FIFA ranking:                 54       32
+Squad market value (EUR m):   49.25         198.65
+Recent form (last 10, W-D-L): 2-4-4       4-5-1
+Goals for / against (last 10):9/12       16/6
+Host nation playing at home:  no       yes
+Rest days since last match:   4       4

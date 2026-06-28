@@ -125,9 +125,9 @@ The two market baselines are **excluded** from the primary pack (circularity); t
 
 ### Data sources and freeze protocol
 - Elo and Elo difference — eloratings.net
-- FIFA ranking — FIFA
-- Squad market value — Transfermarkt
-- Recent form and goals — any match-results database
+- FIFA ranking — FIFA's own ranking page (`inside.fifa.com/fifa-world-ranking/men`), **captured live pre-kickoff at the matched timestamp, consistent with Elo** (the live in-tournament ranking reflects only group-stage/pre-match results, so it is leakage-free for the knockout prediction; third-party reprints are not used).
+- Squad market value — Transfermarkt national-team page directly (e.g. `transfermarkt.com/.../startseite/verein/<id>`), not secondary sites that cite it.
+- Recent form and goals — **FBref match logs**: the team's most recent **10 senior A-team internationals** (competitive *and* friendlies, A-team only) ending with the matches played **before this fixture**. W–D–L and goals for/against are computed over exactly those 10 matches; the FBref match-log URL is recorded per team.
 - Rest days and host flag — derived from the official schedule
 
 **Protocol:** pull every field once, timestamp it, freeze it, and send the identical file to all four models.
