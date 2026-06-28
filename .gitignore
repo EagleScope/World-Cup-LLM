@@ -18,6 +18,8 @@ data/markets/pilot*
 data/pilot/_local/
 # Live forecasts collected locally (raw+parsed), gitignored per PI directive (post-tag).
 data/forecasts/_local/
+# Study results workbook (derived from forecasts; contains unscored local results).
+data/results/_local/
 !data/**/.gitkeep
 
 # ---- Python ----
