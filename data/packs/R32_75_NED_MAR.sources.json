@@ -1,0 +1,67 @@
+{
+  "match_id": "R32_75_NED_MAR",
+  "captured_at": "2026-06-29T22:46:43.705193+00:00",
+  "kickoff": "2026-06-30T01:00:00+00:00",
+  "fields": {
+    "elo": {
+      "A": 1980,
+      "B": 1877,
+      "diff": 103,
+      "source": "eloratings.net (live pre-kickoff snapshot)",
+      "provenance": {
+        "source": "eloratings.net",
+        "capture_timestamp": "2026-06-29T22:46:43.705193+00:00",
+        "source_urls": {
+          "World.tsv": "https://www.eloratings.net/World.tsv",
+          "en.teams.tsv": "https://www.eloratings.net/en.teams.tsv"
+        },
+        "snapshot_dir": "data/packs/R32_75_NED_MAR.elo",
+        "world_tsv_sha256": "b235654010dcb1b40f574f901044242beff523ac8f3b7d6bc6fca0d086018c24",
+        "teams_tsv_sha256": "ff4b8c9c7bcdad56e81a007726c1a655c6dabdf77bca151b1d619f24125dbc90"
+      }
+    },
+    "fifa_rank": {
+      "A": 7,
+      "B": 6,
+      "type": "live in-tournament (pre-kickoff)",
+      "source_url": "https://inside.fifa.com/fifa-world-ranking/men",
+      "note": "re-verified on FIFA's own page in the kickoff-3h window; Netherlands 7 (1775.50) / Morocco 6 (1776.40), live window (last official update 2026-06-11)"
+    },
+    "squad_value_eur_m": {
+      "A": 754.2,
+      "B": 447.7,
+      "source_url_A": "https://www.transfermarkt.com/niederlande/startseite/verein/3379",
+      "source_url_B": "https://www.transfermarkt.com/marokko/startseite/verein/3575",
+      "note": "Transfermarkt national-team total market value, captured 2026-06-29 (intraday-stable)"
+    },
+    "form_last10_wdl": {
+      "A": "6-3-1",
+      "B": "5-4-1",
+      "source": "data/reference/last10/last10_R32.json (author-verified; penalties=draw)",
+      "note": "10 most recent senior A-team internationals before 2026-06-29; leakage-checked"
+    },
+    "goals_for_against_last10": {
+      "A": "24/9",
+      "B": "16/7",
+      "source": "data/reference/last10/last10_R32.json (same verified table)"
+    },
+    "rest_days": {
+      "A": 4,
+      "B": 5,
+      "basis": "NED last 2026-06-25, MAR last 2026-06-24; match date 2026-06-29",
+      "source_url": "data/reference/last10/last10_R32.json"
+    },
+    "host_flag": {
+      "A": "no",
+      "B": "no",
+      "basis": "2026 hosts USA/CAN/MEX; neither team is a host"
+    },
+    "venue": {
+      "venue": "Estadio BBVA",
+      "city": "Guadalupe",
+      "source_url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage",
+      "note": "Match 75; kickoff 2026-06-30T01:00Z (2026-06-29 19:00 local, UTC-6)"
+    }
+  },
+  "market_benchmark_manifest": "data/markets/R32_75_NED_MAR.market.manifest.json"
+}

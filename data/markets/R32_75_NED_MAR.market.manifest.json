@@ -1,0 +1,151 @@
+{
+  "match_id": "R32_75_NED_MAR",
+  "team_A": "Netherlands",
+  "team_B": "Morocco",
+  "capture_timestamp": "2026-06-29T22:46:43.705193+00:00",
+  "kickoff_timestamp": "2026-06-30T01:00:00+00:00",
+  "devig_method": "proportional",
+  "pinnacle": {
+    "captured": true,
+    "path": "data/markets/R32_75_NED_MAR.pinnacle.raw.json",
+    "sha256": "2d33fe2f0adb21f3642801e828623f3c5e43e0e71fe07fc363fbd5b5d408e4f8",
+    "bytes": 6115,
+    "captured_at": "2026-06-29T22:46:43.705193+00:00",
+    "raw_odds": {
+      "home": 2.43,
+      "draw": 3.18,
+      "away": 3.38
+    },
+    "devigged_AB": {
+      "A_WIN": 0.40272469763050217,
+      "DRAW": 0.30774245762330826,
+      "B_WIN": 0.28953284474618945
+    }
+  },
+  "polymarket": {
+    "captured": true,
+    "raw_search": {
+      "path": "data/markets/R32_75_NED_MAR.polymarket.search.raw.json",
+      "sha256": "8aac589a4900eaf9c34aebcdf6d2f0d4dc05c452df8bff941447c1ade16f6670",
+      "bytes": 3279538,
+      "captured_at": "2026-06-29T22:46:43.705193+00:00"
+    },
+    "benchmark": {
+      "team_A": "Netherlands",
+      "team_B": "Morocco",
+      "three_way": {
+        "captured": true,
+        "event_slug": "fifwc-nld-mar-2026-06-29",
+        "raw_yes": {
+          "A_win": 0.405,
+          "draw": 0.315,
+          "B_win": 0.285
+        },
+        "booksum": 1.005,
+        "overround_pct": 0.5,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "A_WIN": 0.4029850746268657,
+            "DRAW": 0.31343283582089554,
+            "B_WIN": 0.2835820895522388
+          },
+          "odds_ratio": {
+            "A_WIN": 0.4031749654919656,
+            "DRAW": 0.31336693190386844,
+            "B_WIN": 0.28345810260416604
+          },
+          "shin": {
+            "A_WIN": 0.40324598101107656,
+            "DRAW": 0.3133582577768191,
+            "B_WIN": 0.28339576121210436
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Morocco win on 2026-06-29?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.285\", \"0.715\"]",
+            "lastTradePrice": 0.29,
+            "bestBid": 0.28,
+            "bestAsk": 0.29,
+            "clobTokenIds": "[\"84597496489313264837847684053401517117472634121930855082913192700166797262773\", \"36598770962669584443466035410637015084566043685075383546932963394933214558711\"]",
+            "volume": "712754.2754519929",
+            "liquidity": "3221957.0674"
+          },
+          {
+            "question": "Will Netherlands win on 2026-06-29?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.405\", \"0.595\"]",
+            "lastTradePrice": 0.41,
+            "bestBid": 0.4,
+            "bestAsk": 0.41,
+            "clobTokenIds": "[\"7274552498925682773418691853971449969741694357120018415935498544583333363785\", \"99525805040938466968012647710124138858577938764917821999837499034824322004088\"]",
+            "volume": "3444285.9487189595",
+            "liquidity": "2666742.9916"
+          },
+          {
+            "question": "Will Netherlands vs. Morocco end in a draw?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.315\", \"0.685\"]",
+            "lastTradePrice": 0.31,
+            "bestBid": 0.31,
+            "bestAsk": 0.32,
+            "clobTokenIds": "[\"103480646400667231774637698938140554746639729204846464856545603155973283412911\", \"36612451586486753460137716695589921799105224040987245727122382428894019518997\"]",
+            "volume": "833347.2254339991",
+            "liquidity": "2750561.2933"
+          }
+        ]
+      },
+      "advancement": {
+        "captured": true,
+        "event_slug": "world-cup-nation-to-reach-round-of-16",
+        "next_round": "Round of 16",
+        "raw_yes": {
+          "A": 0.6,
+          "B": 0.405
+        },
+        "booksum": 1.005,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "ADV_A": 0.5970149253731344,
+            "ADV_B": 0.4029850746268657
+          },
+          "odds_ratio": {
+            "ADV_A": 0.5975025339180873,
+            "ADV_B": 0.40249746608191284
+          },
+          "shin": {
+            "ADV_A": 0.5975,
+            "ADV_B": 0.4025
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Morocco reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.405\", \"0.595\"]",
+            "lastTradePrice": 0.4,
+            "bestBid": 0.4,
+            "bestAsk": 0.41,
+            "clobTokenIds": "[\"79608501830067021264724902089037494234125133872957710853689992568621224170729\", \"48738505309416677636968257637385363193365404851181686681017687428752418571048\"]",
+            "volume": "109563.15177399991",
+            "liquidity": "14374.2333"
+          },
+          {
+            "question": "Will Netherlands reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.6\", \"0.4\"]",
+            "lastTradePrice": 0.61,
+            "bestBid": 0.59,
+            "bestAsk": 0.61,
+            "clobTokenIds": "[\"37557394004703298076132738469113994280534731495187191209099291249243407186037\", \"31075635379724102386207598360987357886852478994237202126337897809675493318171\"]",
+            "volume": "107144.41836499979",
+            "liquidity": "16531.0733"
+          }
+        ]
+      }
+    }
+  }
+}

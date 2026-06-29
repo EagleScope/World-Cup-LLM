@@ -1,0 +1,39 @@
+{
+  "match_id": "R32_75_NED_MAR",
+  "fields": {
+    "round": "Round of 32",
+    "date": "2026-06-29",
+    "venue": "Estadio BBVA",
+    "venue_city": "Guadalupe",
+    "team_A": "Netherlands",
+    "team_B": "Morocco",
+    "eloA": 1980,
+    "eloB": 1877,
+    "elo_diff": 103,
+    "rankA": 7,
+    "rankB": 6,
+    "mvA": 754.2,
+    "mvB": 447.7,
+    "formA": "6-3-1",
+    "formB": "5-4-1",
+    "gfgaA": "24/9",
+    "gfgaB": "16/7",
+    "hostA": "no",
+    "hostB": "no",
+    "restA": 4,
+    "restB": 5
+  },
+  "pack_text": "MATCH: Round of 32, 2026-06-29, Estadio BBVA, Guadalupe\nTEAM A: Netherlands\nTEAM B: Morocco\n\n                              TEAM A        TEAM B\nWorld Football Elo:           1980        1877\nElo difference (A - B):       103\nFIFA ranking:                 7       6\nSquad market value (EUR m):   754.2         447.7\nRecent form (last 10, W-D-L): 6-3-1       5-4-1\nGoals for / against (last 10):24/9       16/7\nHost nation playing at home:  no       no\nRest days since last match:   4       5",
+  "freeze_timestamp": "2026-06-29T22:46:43.705193+00:00",
+  "content_sha256": "d5e76cb04192f1a06431011f957c5b55183fb6652a1693e1a932332b1a5f6fcc",
+  "sources": {
+    "elo": "eloratings.net",
+    "fifa_rank": "FIFA",
+    "squad_value_eur_m": "Transfermarkt",
+    "recent_form_wdl": "match-results database (TBD)",
+    "goals_for_against": "match-results database (TBD)",
+    "rest_days": "official schedule",
+    "host_flag": "official schedule (USA/CAN/MEX co-hosts)"
+  },
+  "protocol_version": "1.0"
+}

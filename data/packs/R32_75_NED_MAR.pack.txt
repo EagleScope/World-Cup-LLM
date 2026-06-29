@@ -1,0 +1,13 @@
+MATCH: Round of 32, 2026-06-29, Estadio BBVA, Guadalupe
+TEAM A: Netherlands
+TEAM B: Morocco
+
+                              TEAM A        TEAM B
+World Football Elo:           1980        1877
+Elo difference (A - B):       103
+FIFA ranking:                 7       6
+Squad market value (EUR m):   754.2         447.7
+Recent form (last 10, W-D-L): 6-3-1       5-4-1
+Goals for / against (last 10):24/9       16/7
+Host nation playing at home:  no       no
+Rest days since last match:   4       5
