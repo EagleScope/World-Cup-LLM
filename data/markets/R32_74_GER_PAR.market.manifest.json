@@ -1,0 +1,151 @@
+{
+  "match_id": "R32_74_GER_PAR",
+  "team_A": "Germany",
+  "team_B": "Paraguay",
+  "capture_timestamp": "2026-06-29T17:49:24.064079+00:00",
+  "kickoff_timestamp": "2026-06-29T20:30:00+00:00",
+  "devig_method": "proportional",
+  "pinnacle": {
+    "captured": true,
+    "path": "data/markets/R32_74_GER_PAR.pinnacle.raw.json",
+    "sha256": "74887087dcf1ea94211861d1ddf013daf13cddb5acbcfe2973b598f70bf5e778",
+    "bytes": 6801,
+    "captured_at": "2026-06-29T17:49:24.064079+00:00",
+    "raw_odds": {
+      "home": 1.37,
+      "draw": 5.2,
+      "away": 10.0
+    },
+    "devigged_AB": {
+      "A_WIN": 0.7140503130835988,
+      "DRAW": 0.18812479402394813,
+      "B_WIN": 0.09782489289245304
+    }
+  },
+  "polymarket": {
+    "captured": true,
+    "raw_search": {
+      "path": "data/markets/R32_74_GER_PAR.polymarket.search.raw.json",
+      "sha256": "aad72702a99c9df0ada9f59641e83cf5cfd7c311b54c9c1691ba1a3525483f76",
+      "bytes": 2594797,
+      "captured_at": "2026-06-29T17:49:24.064079+00:00"
+    },
+    "benchmark": {
+      "team_A": "Germany",
+      "team_B": "Paraguay",
+      "three_way": {
+        "captured": true,
+        "event_slug": "fifwc-ger-par-2026-06-29",
+        "raw_yes": {
+          "A_win": 0.725,
+          "draw": 0.185,
+          "B_win": 0.095
+        },
+        "booksum": 1.005,
+        "overround_pct": 0.5,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "A_WIN": 0.7213930348258707,
+            "DRAW": 0.18407960199004977,
+            "B_WIN": 0.09452736318407962
+          },
+          "odds_ratio": {
+            "A_WIN": 0.7227060938660991,
+            "DRAW": 0.18327597177418964,
+            "B_WIN": 0.09401793435971127
+          },
+          "shin": {
+            "A_WIN": 0.722846994626746,
+            "DRAW": 0.18351876366983888,
+            "B_WIN": 0.09363424170341521
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Germany win on 2026-06-29?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.725\", \"0.275\"]",
+            "lastTradePrice": 0.73,
+            "bestBid": 0.72,
+            "bestAsk": 0.73,
+            "clobTokenIds": "[\"105955641798220222973109187224574301257632160324818588692950982681479970305564\", \"51735326862567847289125781793702459528262106476147156937538535457199760764770\"]",
+            "volume": "1691710.5661629546",
+            "liquidity": "2318822.1337"
+          },
+          {
+            "question": "Will Germany vs. Paraguay end in a draw?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.185\", \"0.815\"]",
+            "lastTradePrice": 0.19,
+            "bestBid": 0.18,
+            "bestAsk": 0.19,
+            "clobTokenIds": "[\"78992976791828739620420933876609388738726260071189100674116150068585292217601\", \"105192800804198710306030209027069357386368877618745447771286084304287043339083\"]",
+            "volume": "276036.3281560004",
+            "liquidity": "2363405.226"
+          },
+          {
+            "question": "Will Paraguay win on 2026-06-29?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.095\", \"0.905\"]",
+            "lastTradePrice": 0.1,
+            "bestBid": 0.09,
+            "bestAsk": 0.1,
+            "clobTokenIds": "[\"112884343986953105163186363276231855702754661505182578867175479629986969795783\", \"79199945579089325844678762121803021566052905161162201255199561299591021777726\"]",
+            "volume": "593714.3201689977",
+            "liquidity": "3113332.9739"
+          }
+        ]
+      },
+      "advancement": {
+        "captured": true,
+        "event_slug": "world-cup-nation-to-reach-round-of-16",
+        "next_round": "Round of 16",
+        "raw_yes": {
+          "A": 0.855,
+          "B": 0.145
+        },
+        "booksum": 1.0,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "ADV_A": 0.855,
+            "ADV_B": 0.145
+          },
+          "odds_ratio": {
+            "ADV_A": 0.8549999999999999,
+            "ADV_B": 0.14500000000000002
+          },
+          "shin": {
+            "ADV_A": 0.855,
+            "ADV_B": 0.145
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Paraguay reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.145\", \"0.855\"]",
+            "lastTradePrice": 0.15,
+            "bestBid": 0.14,
+            "bestAsk": 0.15,
+            "clobTokenIds": "[\"54531196060171358593795056739114888489360018778111526707821920900741065300584\", \"94280784622816041696812740566679980999657488331519393587325431909437953211769\"]",
+            "volume": "23539.019168999992",
+            "liquidity": "8026.1313"
+          },
+          {
+            "question": "Will Germany reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.855\", \"0.145\"]",
+            "lastTradePrice": 0.86,
+            "bestBid": 0.85,
+            "bestAsk": 0.86,
+            "clobTokenIds": "[\"12341053492199460587071379430911500072539486092625964742971766899097354438218\", \"24713363617015140985428485445726484741114718845889767841068249160618028015457\"]",
+            "volume": "148289.54173199984",
+            "liquidity": "23035.9123"
+          }
+        ]
+      }
+    }
+  }
+}

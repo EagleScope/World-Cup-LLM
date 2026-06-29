@@ -1,0 +1,13 @@
+MATCH: Round of 32, 2026-06-29, Gillette Stadium, Foxborough
+TEAM A: Germany
+TEAM B: Paraguay
+
+                              TEAM A        TEAM B
+World Football Elo:           1916        1815
+Elo difference (A - B):       101
+FIFA ranking:                 12       37
+Squad market value (EUR m):   947.0         153.65
+Recent form (last 10, W-D-L): 9-0-1       4-2-4
+Goals for / against (last 10):31/9       13/13
+Host nation playing at home:  no       no
+Rest days since last match:   4       4
