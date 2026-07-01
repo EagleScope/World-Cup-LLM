@@ -1,0 +1,13 @@
+MATCH: Round of 32, 2026-06-30, Estadio Azteca, Mexico City
+TEAM A: Mexico
+TEAM B: Ecuador
+
+                              TEAM A        TEAM B
+World Football Elo:           1912        1902
+Elo difference (A - B):       10
+FIFA ranking:                 9       24
+Squad market value (EUR m):   191.85         368.7
+Recent form (last 10, W-D-L): 7-3-0       3-6-1
+Goals for / against (last 10):15/2       9/6
+Host nation playing at home:  yes       no
+Rest days since last match:   6       5

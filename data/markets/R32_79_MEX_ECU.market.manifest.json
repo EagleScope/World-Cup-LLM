@@ -1,0 +1,151 @@
+{
+  "match_id": "R32_79_MEX_ECU",
+  "team_A": "Mexico",
+  "team_B": "Ecuador",
+  "capture_timestamp": "2026-07-01T00:30:00.433617+00:00",
+  "kickoff_timestamp": "2026-07-01T01:00:00+00:00",
+  "devig_method": "proportional",
+  "pinnacle": {
+    "captured": true,
+    "path": "data/markets/R32_79_MEX_ECU.pinnacle.raw.json",
+    "sha256": "308bd2def6aa392a3762d82c62f6750f6472049694b55ca529af681e0367dfaa",
+    "bytes": 5889,
+    "captured_at": "2026-07-01T00:30:00.433617+00:00",
+    "raw_odds": {
+      "home": 2.28,
+      "draw": 2.92,
+      "away": 4.13
+    },
+    "devigged_AB": {
+      "A_WIN": 0.4286547046947422,
+      "DRAW": 0.33470298859726444,
+      "B_WIN": 0.23664230670799324
+    }
+  },
+  "polymarket": {
+    "captured": true,
+    "raw_search": {
+      "path": "data/markets/R32_79_MEX_ECU.polymarket.search.raw.json",
+      "sha256": "bcbfbea3a7ae7b4a819c936e1b2f6c84d4c0c824cb8443915577699b89222184",
+      "bytes": 3181849,
+      "captured_at": "2026-07-01T00:30:00.433617+00:00"
+    },
+    "benchmark": {
+      "team_A": "Mexico",
+      "team_B": "Ecuador",
+      "three_way": {
+        "captured": true,
+        "event_slug": "fifwc-mex-ecu-2026-06-30",
+        "raw_yes": {
+          "A_win": 0.435,
+          "draw": 0.345,
+          "B_win": 0.235
+        },
+        "booksum": 1.015,
+        "overround_pct": 1.5,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "A_WIN": 0.4285714285714285,
+            "DRAW": 0.33990147783251223,
+            "B_WIN": 0.23152709359605908
+          },
+          "odds_ratio": {
+            "A_WIN": 0.4293302857273357,
+            "DRAW": 0.3397978469825798,
+            "B_WIN": 0.2308718672900845
+          },
+          "shin": {
+            "A_WIN": 0.4296389977295077,
+            "DRAW": 0.33997371507596647,
+            "B_WIN": 0.23038728719452586
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Mexico vs. Ecuador end in a draw?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.345\", \"0.655\"]",
+            "lastTradePrice": 0.34,
+            "bestBid": 0.34,
+            "bestAsk": 0.35,
+            "clobTokenIds": "[\"11866110555495951633661793493234198760714743866421175130577619510964118146114\", \"43985168130182870755247732543601334469951988015446982760628774484167514869810\"]",
+            "volume": "1433012.3379989928",
+            "liquidity": "3337724.7731"
+          },
+          {
+            "question": "Will Mexico win on 2026-06-30?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.435\", \"0.565\"]",
+            "lastTradePrice": 0.44,
+            "bestBid": 0.43,
+            "bestAsk": 0.44,
+            "clobTokenIds": "[\"114468314836265493179349149555121147219378704003010144698095755324094165081893\", \"67614118299712719244400167745909935240133263886550154700443310074824676975678\"]",
+            "volume": "4310109.405246734",
+            "liquidity": "5911128.8922"
+          },
+          {
+            "question": "Will Ecuador win on 2026-06-30?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.235\", \"0.765\"]",
+            "lastTradePrice": 0.24,
+            "bestBid": 0.23,
+            "bestAsk": 0.24,
+            "clobTokenIds": "[\"95900004446820028523281487282586307546683508186408363039386301983885387392092\", \"14753181132224533962327406306798932018839804652805120793236056448662744550651\"]",
+            "volume": "2001736.3538410263",
+            "liquidity": "3701234.1403"
+          }
+        ]
+      },
+      "advancement": {
+        "captured": true,
+        "event_slug": "world-cup-nation-to-reach-round-of-16",
+        "next_round": "Round of 16",
+        "raw_yes": {
+          "A": 0.635,
+          "B": 0.365
+        },
+        "booksum": 1.0,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "ADV_A": 0.635,
+            "ADV_B": 0.365
+          },
+          "odds_ratio": {
+            "ADV_A": 0.635,
+            "ADV_B": 0.365
+          },
+          "shin": {
+            "ADV_A": 0.635,
+            "ADV_B": 0.365
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Mexico reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.635\", \"0.365\"]",
+            "lastTradePrice": 0.64,
+            "bestBid": 0.63,
+            "bestAsk": 0.64,
+            "clobTokenIds": "[\"27577752736542517376939487685916842667160708415532718165523151065073368851695\", \"22561127961441442638508856541272608348577778135974485089218671267212800825611\"]",
+            "volume": "144153.42205199998",
+            "liquidity": "26136.1547"
+          },
+          {
+            "question": "Will Ecuador reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.365\", \"0.635\"]",
+            "lastTradePrice": 0.37,
+            "bestBid": 0.36,
+            "bestAsk": 0.37,
+            "clobTokenIds": "[\"92874169432316838153987490219688546648218333924509520152849018392982150548316\", \"9394826416264313728189865790231603727807949007158747967606662916234739950086\"]",
+            "volume": "68394.96930700006",
+            "liquidity": "22509.5309"
+          }
+        ]
+      }
+    }
+  }
+}
