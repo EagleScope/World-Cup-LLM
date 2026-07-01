@@ -1,0 +1,13 @@
+MATCH: Round of 32, 2026-07-01, Lumen Field, Seattle
+TEAM A: Belgium
+TEAM B: Senegal
+
+                              TEAM A        TEAM B
+World Football Elo:           1884        1842
+Elo difference (A - B):       42
+FIFA ranking:                 10       18
+Squad market value (EUR m):   547.5         478.1
+Recent form (last 10, W-D-L): 6-4-0       6-1-3
+Goals for / against (last 10):31/8       18/10
+Host nation playing at home:  no       no
+Rest days since last match:   5       5

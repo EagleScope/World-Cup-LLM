@@ -1,0 +1,39 @@
+{
+  "match_id": "R32_82_BEL_SEN",
+  "fields": {
+    "round": "Round of 32",
+    "date": "2026-07-01",
+    "venue": "Lumen Field",
+    "venue_city": "Seattle",
+    "team_A": "Belgium",
+    "team_B": "Senegal",
+    "eloA": 1884,
+    "eloB": 1842,
+    "elo_diff": 42,
+    "rankA": 10,
+    "rankB": 18,
+    "mvA": 547.5,
+    "mvB": 478.1,
+    "formA": "6-4-0",
+    "formB": "6-1-3",
+    "gfgaA": "31/8",
+    "gfgaB": "18/10",
+    "hostA": "no",
+    "hostB": "no",
+    "restA": 5,
+    "restB": 5
+  },
+  "pack_text": "MATCH: Round of 32, 2026-07-01, Lumen Field, Seattle\nTEAM A: Belgium\nTEAM B: Senegal\n\n                              TEAM A        TEAM B\nWorld Football Elo:           1884        1842\nElo difference (A - B):       42\nFIFA ranking:                 10       18\nSquad market value (EUR m):   547.5         478.1\nRecent form (last 10, W-D-L): 6-4-0       6-1-3\nGoals for / against (last 10):31/8       18/10\nHost nation playing at home:  no       no\nRest days since last match:   5       5",
+  "freeze_timestamp": "2026-07-01T18:41:38.112572+00:00",
+  "content_sha256": "ccd21cbf3af708955c22721658beac8084b700d1383cf12cdd26fff4366397bd",
+  "sources": {
+    "elo": "eloratings.net",
+    "fifa_rank": "FIFA",
+    "squad_value_eur_m": "Transfermarkt",
+    "recent_form_wdl": "match-results database (TBD)",
+    "goals_for_against": "match-results database (TBD)",
+    "rest_days": "official schedule",
+    "host_flag": "official schedule (USA/CAN/MEX co-hosts)"
+  },
+  "protocol_version": "1.0"
+}

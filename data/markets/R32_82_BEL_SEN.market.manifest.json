@@ -1,0 +1,151 @@
+{
+  "match_id": "R32_82_BEL_SEN",
+  "team_A": "Belgium",
+  "team_B": "Senegal",
+  "capture_timestamp": "2026-07-01T18:41:38.112572+00:00",
+  "kickoff_timestamp": "2026-07-01T20:00:00+00:00",
+  "devig_method": "proportional",
+  "pinnacle": {
+    "captured": true,
+    "path": "data/markets/R32_82_BEL_SEN.pinnacle.raw.json",
+    "sha256": "86a82f832374d89fc491e0345e15de3753bb9642a4bff33419e8dc6d787f8965",
+    "bytes": 5434,
+    "captured_at": "2026-07-01T18:41:38.112572+00:00",
+    "raw_odds": {
+      "home": 2.2,
+      "draw": 3.3,
+      "away": 3.77
+    },
+    "devigged_AB": {
+      "A_WIN": 0.44440078585461684,
+      "DRAW": 0.29626719056974454,
+      "B_WIN": 0.2593320235756385
+    }
+  },
+  "polymarket": {
+    "captured": true,
+    "raw_search": {
+      "path": "data/markets/R32_82_BEL_SEN.polymarket.search.raw.json",
+      "sha256": "40a08b2cb9f4322f384d44717197886f095d27dd37d6ca026ada475467d22705",
+      "bytes": 3040103,
+      "captured_at": "2026-07-01T18:41:38.112572+00:00"
+    },
+    "benchmark": {
+      "team_A": "Belgium",
+      "team_B": "Senegal",
+      "three_way": {
+        "captured": true,
+        "event_slug": "fifwc-bel-sen-2026-07-01",
+        "raw_yes": {
+          "A_win": 0.455,
+          "draw": 0.295,
+          "B_win": 0.255
+        },
+        "booksum": 1.005,
+        "overround_pct": 0.5,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "A_WIN": 0.45273631840796025,
+            "DRAW": 0.2935323383084577,
+            "B_WIN": 0.2537313432835821
+          },
+          "odds_ratio": {
+            "A_WIN": 0.4530788259879577,
+            "DRAW": 0.29339071885594253,
+            "B_WIN": 0.25353045515609973
+          },
+          "shin": {
+            "A_WIN": 0.4531836230664785,
+            "DRAW": 0.2933831550637249,
+            "B_WIN": 0.2534332218697964
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Belgium win on 2026-07-01?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.455\", \"0.545\"]",
+            "lastTradePrice": 0.46,
+            "bestBid": 0.45,
+            "bestAsk": 0.46,
+            "clobTokenIds": "[\"51550519425443949709378847779649788844021865732808641475643382400046061806350\", \"10989844990030080333609297670891411757055697600785810827263876026375780592917\"]",
+            "volume": "2193789.4263749872",
+            "liquidity": "4492301.5061"
+          },
+          {
+            "question": "Will Belgium vs. Senegal end in a draw?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.295\", \"0.705\"]",
+            "lastTradePrice": 0.3,
+            "bestBid": 0.29,
+            "bestAsk": 0.3,
+            "clobTokenIds": "[\"70734912499390294762635620491284391639475146683001061643495623464632375277430\", \"86101389152046565128904131495323644540135193744819811142359812800107254275102\"]",
+            "volume": "459019.97272500565",
+            "liquidity": "3063136.0884"
+          },
+          {
+            "question": "Will Senegal win on 2026-07-01?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.255\", \"0.745\"]",
+            "lastTradePrice": 0.26,
+            "bestBid": 0.25,
+            "bestAsk": 0.26,
+            "clobTokenIds": "[\"101186338300259647808521159297117949746868383615820554531962956488824987030486\", \"94977381112422797079712121033227045171003901410349553709461183029653786236627\"]",
+            "volume": "1687982.623979021",
+            "liquidity": "2448417.2783"
+          }
+        ]
+      },
+      "advancement": {
+        "captured": true,
+        "event_slug": "world-cup-nation-to-reach-round-of-16",
+        "next_round": "Round of 16",
+        "raw_yes": {
+          "A": 0.59,
+          "B": 0.415
+        },
+        "booksum": 1.005,
+        "primary_method": "proportional",
+        "devigged": {
+          "proportional": {
+            "ADV_A": 0.5870646766169154,
+            "ADV_B": 0.4129353233830846
+          },
+          "odds_ratio": {
+            "ADV_A": 0.5875022566686774,
+            "ADV_B": 0.4124977433313227
+          },
+          "shin": {
+            "ADV_A": 0.5875,
+            "ADV_B": 0.41250000000000003
+          }
+        },
+        "per_market": [
+          {
+            "question": "Will Belgium reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.59\", \"0.41\"]",
+            "lastTradePrice": 0.6,
+            "bestBid": 0.58,
+            "bestAsk": 0.6,
+            "clobTokenIds": "[\"78042267197293570277682494823265701631907405223712907561037063598368049101974\", \"18782888352617925820170800958963772910963693999030695044980786894556656098030\"]",
+            "volume": "74614.00099800005",
+            "liquidity": "37771.8205"
+          },
+          {
+            "question": "Will Senegal reach the Round of 16 at the 2026 FIFA World Cup?",
+            "outcomes": "[\"Yes\", \"No\"]",
+            "outcomePrices": "[\"0.415\", \"0.585\"]",
+            "lastTradePrice": 0.41,
+            "bestBid": 0.41,
+            "bestAsk": 0.42,
+            "clobTokenIds": "[\"57658384840022958882700756432857712593833858044198870604484883946723861100819\", \"38099997893439422515667366274040250512616921436256735000755245763713499528347\"]",
+            "volume": "66839.67151899994",
+            "liquidity": "37859.2829"
+          }
+        ]
+      }
+    }
+  }
+}
