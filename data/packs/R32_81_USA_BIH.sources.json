@@ -1,0 +1,69 @@
+{
+  "match_id": "R32_81_USA_BIH",
+  "captured_at": "2026-07-01T22:52:26.721904+00:00",
+  "kickoff": "2026-07-02T00:00:00+00:00",
+  "capture_offset_note": "sourced ~kickoff-65min; Elo + market captured pre-kickoff, leakage-free.",
+  "match_number_note": "Official FIFA match number is 81 (Winner Group D vs 3rd-place). It kicks off after match 82 (Belgium vs Senegal, 2026-07-01T20:00Z); R32 numbers are not chronological.",
+  "fields": {
+    "elo": {
+      "A": 1781,
+      "B": 1622,
+      "diff": 159,
+      "source": "eloratings.net (live pre-kickoff snapshot)",
+      "provenance": {
+        "source": "eloratings.net",
+        "capture_timestamp": "2026-07-01T22:52:26.721904+00:00",
+        "source_urls": {
+          "World.tsv": "https://www.eloratings.net/World.tsv",
+          "en.teams.tsv": "https://www.eloratings.net/en.teams.tsv"
+        },
+        "snapshot_dir": "data/packs/R32_81_USA_BIH.elo",
+        "world_tsv_sha256": "39c83a076a11022fc5ae8f90bb1604c406cef53ec80fea2ddf4c89e8de3d3a05",
+        "teams_tsv_sha256": "ff4b8c9c7bcdad56e81a007726c1a655c6dabdf77bca151b1d619f24125dbc90"
+      }
+    },
+    "fifa_rank": {
+      "A": 16,
+      "B": 61,
+      "type": "live in-tournament (pre-kickoff)",
+      "source_url": "https://inside.fifa.com/fifa-world-ranking/men",
+      "note": "live in-tournament ranking, pre-kickoff; USA 16 (1677.17) / Bosnia & Herzegovina 61 (1408.93)"
+    },
+    "squad_value_eur_m": {
+      "A": 385.65,
+      "B": 146.4,
+      "source_url_A": "https://www.transfermarkt.us/vereinigte-staaten/kader/verein/3505",
+      "source_url_B": "https://www.transfermarkt.us/bosnien-herzegowina/kader/verein/3446",
+      "note": "Transfermarkt national-team total market value, captured live in window"
+    },
+    "form_last10_wdl": {
+      "A": "6-0-4",
+      "B": "3-6-1",
+      "source": "data/reference/last10/last10_R32.json (author-verified; penalties=draw)",
+      "note": "10 most recent senior A-team internationals before 2026-07-01; leakage-checked"
+    },
+    "goals_for_against_last10": {
+      "A": "23/18",
+      "B": "16/12",
+      "source": "data/reference/last10/last10_R32.json (same verified table)"
+    },
+    "rest_days": {
+      "A": 6,
+      "B": 7,
+      "basis": "USA last 2026-06-25, BIH last 2026-06-24; match date 2026-07-01",
+      "source_url": "data/reference/last10/last10_R32.json"
+    },
+    "host_flag": {
+      "A": "yes",
+      "B": "no",
+      "basis": "2026 hosts USA/CAN/MEX; USA plays at home (Levi's Stadium, Santa Clara)"
+    },
+    "venue": {
+      "venue": "Levi's Stadium",
+      "city": "Santa Clara",
+      "source_url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_knockout_stage",
+      "note": "Match 81; kickoff 2026-07-02T00:00Z (2026-07-01 17:00 local PDT, UTC-7)"
+    }
+  },
+  "market_benchmark_manifest": "data/markets/R32_81_USA_BIH.market.manifest.json"
+}

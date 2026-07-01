@@ -1,0 +1,13 @@
+MATCH: Round of 32, 2026-07-01, Levi's Stadium, Santa Clara
+TEAM A: USA
+TEAM B: Bosnia & Herzegovina
+
+                              TEAM A        TEAM B
+World Football Elo:           1781        1622
+Elo difference (A - B):       159
+FIFA ranking:                 16       61
+Squad market value (EUR m):   385.65         146.4
+Recent form (last 10, W-D-L): 6-0-4       3-6-1
+Goals for / against (last 10):23/18       16/12
+Host nation playing at home:  yes       no
+Rest days since last match:   6       7

@@ -1,0 +1,46 @@
+{
+  "match_id": "R32_81_USA_BIH",
+  "team_A": "USA",
+  "team_B": "Bosnia & Herzegovina",
+  "capture_timestamp": "2026-07-01T22:52:26.721904+00:00",
+  "kickoff_timestamp": "2026-07-02T00:00:00+00:00",
+  "devig_method": "proportional",
+  "pinnacle": {
+    "captured": true,
+    "path": "data/markets/R32_81_USA_BIH.pinnacle.raw.json",
+    "sha256": "7c58d5c4cc818d76ff33314643af663b338aa4aad88c44e0278f38a135ec0813",
+    "bytes": 4742,
+    "captured_at": "2026-07-01T22:52:26.721904+00:00",
+    "raw_odds": {
+      "home": 1.37,
+      "draw": 5.25,
+      "away": 9.5
+    },
+    "devigged_AB": {
+      "A_WIN": 0.7116612563764134,
+      "DRAW": 0.1857096992829879,
+      "B_WIN": 0.10262904434059857
+    }
+  },
+  "polymarket": {
+    "captured": true,
+    "raw_search": {
+      "path": "data/markets/R32_81_USA_BIH.polymarket.search.raw.json",
+      "sha256": "3e8459ab50556035abf690af1647bbe8d8502c9b5ef5f9dcdcad177683bb948c",
+      "bytes": 1374906,
+      "captured_at": "2026-07-01T22:52:26.721904+00:00"
+    },
+    "benchmark": {
+      "team_A": "USA",
+      "team_B": "Bosnia & Herzegovina",
+      "three_way": {
+        "captured": false,
+        "reason": "no per-match 3-way event in search"
+      },
+      "advancement": {
+        "captured": false,
+        "reason": "no 'Round of 16' advancement event in search"
+      }
+    }
+  }
+}
